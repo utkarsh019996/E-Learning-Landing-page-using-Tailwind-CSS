@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Design Mastery | E-Learning</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#6eb0ec',
+              textDark: '#111827',
+              textLight: '#6b7280',
+              white: '#ffffff',
+              bgc: '#efeaee',
+            },
+            fontFamily: {
+              rale: ['Raleway', 'sans-serif'],
+            },
+            maxWidth: {
+              container: '1200px',
+            },
+            gridTemplateAreas: {
+              header: ['header header'],
+              main: ['main main'],
+              footer: ['footer footer'],
+            }
+          },
+        },
+      }
+    </script>
+  </head>
+  <body class="font-rale p-0 m-0 box-border list-none no-underline">
+    <nav class="max-w-container p-4 flex flex-col items-center justify-between gap-x-4 gap-y-8 border-b-textLight md:py-8 md:px4 md:flex-row" style="margin-inline: auto;">
+      <div class="nav__logo flex items-center gap-2 text-2xl font-bold text-primary md:flex-1">
+        <div class="w-10 aspect-square grid place-content-center text-2xl text-white bg-primary rounded-full">E</div>
+        Learning
+      </div>
+      <ul class="nav__socials flex items-center justify-center gap-4 ">
+        <li>
+          <a href="#" class="transition duration-300 py-1.5 px-2 text-2xl text-textDark bg-bgc rounded-full hover:text-white hover:bg-textLight"><i class="ri-twitter-fill"></i></a>
+        </li>
+        <li>
+          <a href="#"  class="transition duration-300 py-1.5 px-2 text-2xl text-textDark bg-bgc rounded-full hover:text-white hover:bg-textLight"><i class="ri-facebook-circle-fill"></i></a>
+        </li>
+        <li>
+          <a href="#"  class="transition duration-300 py-1.5 px-2 text-2xl text-textDark bg-bgc rounded-full hover:text-white hover:bg-textLight"><i class="ri-pinterest-line"></i></a>
+        </li>
+        <li>
+          <a href="#"  class="transition duration-300 py-1.5 px-2 text-2xl text-textDark bg-bgc rounded-full hover:text-white hover:bg-textLight"><i class="ri-instagram-line"></i></a>
+        </li>
+      </ul>
+      <div class="nav__contact flex items-center justify-center gap-4 sm:g-8 md:flex-1 md:justify-end">
+        <div class="nav__contact__card flex items-center gap-2 sm:gap-4">
+          <span class="text-4xl text-primary"><i class="ri-phone-line"></i></span>
+          <div>
+            <p class="mb-1 text-sm font-semibold text-textLight">Call Us</p>
+            <h4 class="text-base font-bold text-textDark">+01 98765 4321</h4>
+          </div>
+        </div>
+        <div class="nav__contact__card flex items-center gap-2">
+          <span class="text-4xl text-primary"><i class="ri-mail-line"></i></span>
+          <div>
+            <p class="mb-1 text-sm font-semibold text-textLight">Email Us</p>
+            <h4 class="text-base font-bold text-textDark">info@elearnings.com</h4>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="header__container max-w-container m-auto py-8 px-4 grid gap-8 text-center md:grid-cols-2 md:items-center md:text-left ">
+      <div class="header__image md:order-2">
+        <img src="assets/header.jpg" alt="header" class="flex w-full"/>
+      </div>
+      <div class="header__content">
+        <h1 class="mb-4 text-6xl font-bold leading-20 text-textDark">Single Platform For All Your <span class="text-primary">Learning</span> Needs.</h1>
+        <p class="mb-8 font-medium text-sm leading-7 ">
+          Whether you're seeking to enhance your professional skills, explore
+          new hobbies, or pursue academic interests, our comprehensive platform
+          offers diverse courses and resources tailored to support your lifelong
+          learning journey.
+        </p>
+        <form action="/" class="flex items-center justify-between flex-col gap-y-4 gap-x-0  bg-gray-50 rounded-lg lg:flex-row">
+          <div class="input__row p-4 flex items-center gap-4 flex-1  ">
+            <div class="input__group flex items-center gap-2 ">
+              <span class="text-textDark"><i class="ri-search-line"></i></span>
+              <input type="text" placeholder="Search for Course" class="w-full outline-none border-none text-base bg-transparent" />
+            </div>
+            <div class="input__group flex items-center gap-2">
+              <span class="text-textDark"><i class="ri-arrow-down-s-line"></i></span>
+              <input type="text" placeholder="Categories" class="w-full outline-none border-none text-base bg-transparent"/>
+            </div>
+          </div>
+          <button type="submit" class="w-full py-4 px-8 outline-none border-none text-base whitespace-nowrap text-white bg-primary rounded-lg cursor-pointer lg:w-fit">Search Now</button>
+        </form>
+      </div>
+    </header>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
